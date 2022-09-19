@@ -61,15 +61,6 @@ public class EvernoteReportingAppApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
-////            blockedEmailIdCasRepository.deleteAll();
-//            List<BlockedEmailIdCas> blockedEmailIdCasList = blockedEmailIdCasRepository.findAll();
-//            blockedEmailIdCasList.forEach(email -> {blockedEmailIdCasRepository.delete(email);});
-//            List<BlockedEmailIds> blockedEmailIdsList = blockedEmailRepository.findAll();
-//
-//            blockedEmailIdsList.forEach(email -> {
-//                blockedEmailIdCasRepository.save(new BlockedEmailIdCas(email.getBlockedEmailId()));
-//            });
-//            System.exit(0);
 
 			List<NotebookDBCas> notebookDBCasList = notebookDBCasRepository.findAll();
 			notebookDBCasList.forEach(notebook -> {notebookDBCasRepository.delete(notebook);});
