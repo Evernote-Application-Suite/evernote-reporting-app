@@ -1,0 +1,12 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  config:
+    import: optional:configserver:http://192.168.1.106:10001/evernote-configs
+  application:
+    name: evernote-reporting-app
+  profiles:
+    active: prod
